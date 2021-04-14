@@ -1,10 +1,13 @@
 body {
     background-color: rgb(0, 207, 155);
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1024px;
+    width: 1080px;
 }
 header {
     background-color: rgb(243, 255, 137);
@@ -17,17 +20,18 @@ nav {
     text-align: center;
 }
 main {
+    background-color: rgba(243, 255, 137, 0.705);
     height: 200px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: white;
+    color:  rgb(0, 111, 214);
     font-family: Geneva, Verdana, sans-serif;
     text-align: center;
 }
 footer {
-background-color: rgb(98, 218, 255);
+background-color: rgb(0, 124, 196);
 height: 100px;
 }
 h1 {
