@@ -8,7 +8,7 @@ function checkEmpty() {
     return email != "" & name != null & surname != null & birthdate != "" & password != "";
 
   }
-  
+
   function signIn() {
 
     var email = document.getElementsByName("email_address_sign_in")[0].value;
@@ -32,9 +32,11 @@ function checkEmpty() {
       }
 
     }
+
     else {
       alert("Sorry, your browser does not support local storage");
     }
+
   }
 
   function signUp() {
@@ -58,10 +60,13 @@ function checkEmpty() {
         document.getElementById("sign_up_error").innerHTML = "user already exists";
         return false;
       }
+
     }
+
     else {
       alert("Sorry, your browser does not support local storage");
       return false;
     }
+
   }
   
