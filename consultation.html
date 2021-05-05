@@ -10,30 +10,36 @@
         <link rel="stylesheet" href="consultation.css">
     </head>
     <body>
-        <div class="container">
-            <header>
-                <img src="img/layan-logo.png" alt="logo-for-layan-website">
-            </header>
-        
-            <nav>
-                <a href="index.html">Homepage</a>
-                <a href="general-supplies.html">General supplies</a>
-                <a href="medical-supplies.html">Medical supplies</a>
-                <a class="active" href="#">Consultation</a>
-                <a href="related-links.html">Related links</a>
-                <a href="sign-in.html" target="_blank">Sign in</a>
-                <a href="sign-up.html" target="_blank">Sign up</a>
-            </nav>
-            
-            <div>
-              <div class="mapContainer">
-                <div id="map"></div>
-              </div>
-            </div>
-
-            <footer></footer>
+      <header>
+          <img src="img/layan-logo.png" alt="logo-for-layan-website">
+      </header>
+      <nav>
+          <a href="index.html">Homepage</a>
+          <a href="general-supplies.html">General supplies</a>
+          <a href="medical-supplies.html">Medical supplies</a>
+          <a class="active" href="#">Consultation</a>
+          <a href="related-links.html">Related links</a>
+          <a href="sign-in.html" target="_blank">Sign in</a>
+          <a href="sign-up.html" target="_blank">Sign up</a>
+      </nav>
+      
+      <div class="container">
+        <div class="cardContainer">
+          <h5>Autism education centers in Turkey</h5>
+          <div class="card">Test</div>
+          <div class="card">Test</div>
         </div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGnUAtJFLEv1JdwuyCyVOPYfCRopJvh8M&callback=initMap&libraries=&v=weekly" async></script>  
-        <script src="./js/map.js"></script>
+        <div class="mapContainer">
+          <div class="searchDiv">
+            <input type="text" id="mapsearch" placeholder="Autism education centers in Turkey">
+            <input type="button" value="Search">
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+
+      <footer></footer>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGnUAtJFLEv1JdwuyCyVOPYfCRopJvh8M&callback=initMap&libraries=places&v=weekly" async></script>  
+      <script src="./js/map.js"></script>
     </body>
 </html>

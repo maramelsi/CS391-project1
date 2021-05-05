@@ -1,11 +1,43 @@
 #map {
   height: 400px;
-  /* The height is 400 pixels */
-  width: 50%;
-  /* The width is the width of the web page */
+  width: 100%;
 }
 
 .mapContainer{
+  width: 40%;
+}
+
+.searchDiv{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  margin-bottom: 5px
+}
+
+.searchDiv>input:last-child{
+  background-color: rgb(243, 255, 137);
+  color: rgb(8, 128, 255)
+}
+
+#mapsearch{
+  width: 50%;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+.container{
+  display: flex;
+  margin: 1rem 0;
+}
+
+.cardContainer{
+  width: 60%
+}
+
+.cardContainer > h5{
+  text-align: center;
+  font-size: 20px;
+}
+.card{
+  border: 1px solid red;
+  margin: 10px
 }

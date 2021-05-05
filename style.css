@@ -3,6 +3,7 @@ body {
    /* background-image: url(img/background.jpg);*/
     background-size: cover;
     background-repeat: no-repeat;
+    margin: 0
 }
 .container {
     margin-left: auto;
