@@ -15,14 +15,17 @@ function showPosition(position) {
   }
 
   map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
+    zoom: 11,
     center: coordinates,
   });
 
   const request = {
     query: "Autism education centers in Turkey",
     fields: ["name", "geometry"],
-    locationBias: {radius: 100, center: coordinates}
+    locationBias: {
+      radius: 100, 
+      center: coordinates
+    }
   };
 
   service = new google.maps.places.PlacesService(map);
