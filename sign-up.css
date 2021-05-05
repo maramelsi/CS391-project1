@@ -1,76 +1,74 @@
-* {box-sizing: border-box
+body {
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
-body{
-    background-color: rgb(0, 207, 155);
-    /*background-image: url(img/background.jpg);*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-}
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: rgb(231, 231, 231);
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: rgb(206, 206, 206);
-  outline: none;
-}
-
-hr {
-  border: 1px solid  rgb(206, 206, 206);
-  margin-bottom: 25px;
-}
-
-
-button {
-  background-color:rgb(0, 124, 196);
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancel {
-  padding: 14px 20px;
-  color: black;
-  background-color: rgb(255, 255, 93);
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancel, .sign {
-  float: left;
-  width: 50%;
-}
-
-
 .container {
-  padding: 16px;
-  background-color: rgb(0, 207, 155);
+  margin-left: auto;
+  margin-right: auto;
+  width: 1080px;
 }
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+header {
+  background-color: rgb(243, 255, 137);
+  height: 100px;
 }
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancel, .sign {
-    width: 100%;
-  }
+nav {
+  background-color: rgb(98, 218, 255);
+  height: 40px;
+}
+main {
+  background-color: rgba(243, 255, 137, 0.705);
+  height: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color:  rgb(0, 111, 214);
+  font-family: Geneva, Verdana, sans-serif;
+}
+form.sign_up{
+  display: inline-block;
+  width: 20%;
+  margin: 2.5%;
+  background-color: rgba(243, 255, 137, 0.705);
+}
+form.sign_in{
+  display: inline-block;
+  width: 20%;
+  margin: 2.5%;
+  background-color: rgba(243, 255, 137, 0.705);
+}
+input {
+  margin-top: 15px;
+}
+button {
+  display: inline-block;
+  color: rgb(0, 111, 214);
+  margin-top: 10px;
+  background-color: rgb(98, 218, 255);
+  border-color: rgb(0, 207, 155);
+}
+footer {
+background-color: rgb(0, 124, 196);
+height: 100px;
+}
+h1 {
+  size: 84px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+nav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+nav a:hover {
+  background-color: white;
+  color: blue;
+}
+nav a.active {
+  background-color: rgb(53, 158, 255);
 }
