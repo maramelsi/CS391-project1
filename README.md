@@ -63,6 +63,41 @@ Exception flows:
 Success guarantee: The user signs in successfuly.
 
 Use case name: Map-Search
+Description: The user can search for autism education centers using Google Maps API directly in the website.
+Owner: Maram Elsebakhi 08.05.21
+Actor: Website user.
+Preconditions:
+    1 - The user has intenet access.
+    2 - The homepage has been opened in a compatible web browser.
+Success scenario:
+    1 - User opens consultation page.
+    2 - The page askes for user permission to display location.
+    3 - The user allows permission.
+    4 - The users inputs search term and clicks search.
+    5 - The map displays search results nearby.
+Alternate flows:
+    Alternate-1:
+    1 - User opens consultation page.
+    2 - The page askes for user permission to display location.
+    3 - User denies access to location.
+    4 - Website contains generic list of locations.
+Success scenario: The map displays search results nearby.
 
 Responsibilities:
+Maram Elsebakhi:
+    1 - General structure of the website and Index file.
+    2 - CSS styling of the website including logo.
+    3 - README file
+Doğuhan Bayık:
+    1 - Sign up page and CSS styling for the page.
+    2 - Javascript code for LocalStorage API "sign_up.js".
+Yunus Emre Karakuz:
+    1 - Consultation page and CSS styling of page.
+    2 - JavaScipt code for Google Maps API access "consultation.js".
+
 Instructions:
+    1 - Download the website folder
+    2 - Open web browser.
+    3 - Open index.html page
+
+IDE: Visual Studio Code.
